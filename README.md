@@ -51,33 +51,35 @@ Your submitted repository should contains:
 
 The network is a wide domain. In this section we explain some of the key concepts needed to understand it a bit better.
 
-A brief explanation is that, to identify a device over the Internet, we use what we call an **IP address** (Internet Protocol address). If you want to communicate with a server or another computer, this is basically what you will use to know **where** to send the data.
+A brief explanation is that, to identify a device over a network (ex: Internet), we use what we call an **IP address** (Internet Protocol address). If you want to communicate with a server or another computer, this is basically what you will use to know **where** to send the data.
 
 📬 **Analogy:**  
 To send a postcard to your friend, you need to know their street address. In networking, to send data to another computer, you need to know its IP address.
 
 There are different versions of IP, and the most commonly known / used are:
 
-- IPv4 (IP version 4) – used almost everywhere today.
-- IPv6 (IP version 6) – a newer version that solves IPv4 limitations, especially the shortage of available addresses.
+- **IPv4** (IP version 4).
+- **IPv6** (IP version 6) – a newer version that solves IPv4 limitations, especially the **shortage of available addresses**.
 
 In the following, we only explain **IPv4**.
 
 An IPv4 address consists of four numbers separated by dots (`.`). For example, `192.168.1.24` could be the IP address of your computer.
 
-Under the hood, an IPv4 address is **32 bits**. Each “number” (octet) is 8 bits:
+An IPv4 address is **32 bits**. Each “number” (octet) is 8 bits:
 
 - `192.168.1.24` → `11000000.10101000.00000001.00011000`
 
-The **TCP/IP addressing scheme** is what allows users and applications to identify a specific **network** or **host** with which to communicate. Each IP address is split into:
+The **TCP/IP addressing scheme** is what allows you to identify a specific **network** or **host** with which to communicate. Each IP address is split into:
 
 - **Network portion** – which network the device belongs to.
 - **Host portion** – which specific device on that network.
 
-This split is defined by the **subnet mask** (see next section).
+This split is defined by the [**subnet mask**](#-subnet-masks).
 
 > ℹ️ See:  
 > - [What Is an IP Address?](https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting) (learn.microsoft.com)  
+> - [What is an IP Address? // You SUCK at Subnetting](https://www.youtube.com/watch?v=5WfiTHiU4x8) (youtube.com - NetworkChuck)
+> - [screw it... let's rebuild the ENTIRE Internet](https://www.youtube.com/watch?v=HRa31C7zfzk) (youtube.com - V2F)
 > - [What Is IPv4?](https://www.cloudflare.com/learning/network-layer/what-is-ipv4/) (cloudflare.com)
 
 
